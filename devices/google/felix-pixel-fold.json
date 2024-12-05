@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "device_name": "Google Pixel Fold",
   "device_type": "android",
   "settings": {

@@ -24,7 +24,8 @@
       "enum": [
         "default",
         "720p",
-        "1080p"
+        "1080p",
+        "1080p-hq"
       ]
     },
 
@@ -101,31 +102,31 @@
               ]
             },
 
-            "stream_target_resolution": {
+            "stream.video.resolution": {
               "$ref": "#/$defs/EnumStreamResolution"
             },
 
-            "stream_codec_profile": {
+            "stream.video.codecProfile": {
               "$ref": "#/$defs/EnumStreamCodecProfile"
             },
 
-            "bitrate_video_max": {
+            "stream.video.maxBitrate": {
               "type": "number"
             },
 
-            "video_player_type": {
+            "video.player.type": {
               "$ref": "#/$defs/EnumVideoPlayer"
             },
 
-            "video_power_preference": {
+            "video.player.powerPreference": {
               "$ref": "#/$defs/EnumVideoPowerPreference"
             },
 
-            "video_processing": {
+            "video.processing": {
               "$ref": "#/$defs/EnumVideoProcessing"
             },
 
-            "video_sharpness": {
+            "video.processing.sharpness": {
               "type": "number"
             }
           }

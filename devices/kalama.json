@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "device_name": "AYN Odin2 mini",
   "device_type": "android-handheld",
   "settings": {
