@@ -57,6 +57,7 @@
   "contrast": "Contraste",
   "controller": "Controle",
   "controller-customization": "Personalização do controle",
+  "controller-customization-input-latency-note": "Pode aumentar ligeiramente a latência de entrada",
   "controller-friendly-ui": "Interface para controles",
   "controller-shortcuts": "Atalhos do controle",
   "controller-shortcuts-connect-note": "Contecte um para utilizar essa funcionalidade",

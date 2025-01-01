@@ -54,6 +54,7 @@
   "contrast": "Contraste",
   "controller": "Manette",
   "controller-customization": "Personnalisation de la manette",
+  "controller-customization-input-latency-note": "Augmente légèrement la latence d'entrée",
   "controller-friendly-ui": "Interface conviviale pour la manette",
   "controller-shortcuts": "Raccourcis de la manette",
   "controller-shortcuts-connect-note": "Connectez une manette pour utiliser cette fonctionnalité",
