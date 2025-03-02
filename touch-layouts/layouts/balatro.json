@@ -12,7 +12,8 @@
               "interaction": {
                 "activationType": "exclusive"
               },
-              "scale": 1.5
+              "deadzone": 0.5,
+              "scale": 2
             }
           ],
           "outer": [
@@ -46,19 +47,64 @@
             }
           ],
           "outer": [
-            null,
+            {
+              "type": "button",
+              "action": "gamepadA",
+              "enabled": false,
+              "styles": {
+                "default": {
+                  "opacity": 0
+                }
+              }
+            },
             {
               "type": "button",
               "action": "gamepadB"
             },
-            null,
-            null,
-            null,
+            {
+              "type": "button",
+              "action": "gamepadA",
+              "enabled": false,
+              "styles": {
+                "default": {
+                  "opacity": 0
+                }
+              }
+            },
+            {
+              "type": "button",
+              "action": "gamepadA",
+              "enabled": false,
+              "styles": {
+                "default": {
+                  "opacity": 0
+                }
+              }
+            },
+            {
+              "type": "button",
+              "action": "gamepadA",
+              "enabled": false,
+              "styles": {
+                "default": {
+                  "opacity": 0
+                }
+              }
+            },
             {
               "type": "button",
               "action": "gamepadX"
             },
-            null,
+            {
+              "type": "button",
+              "action": "gamepadA",
+              "enabled": false,
+              "styles": {
+                "default": {
+                  "opacity": 0
+                }
+              }
+            },
             {
               "type": "button",
               "action": "gamepadY"
