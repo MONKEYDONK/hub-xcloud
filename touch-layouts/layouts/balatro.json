@@ -12,7 +12,7 @@
               "interaction": {
                 "activationType": "exclusive"
               },
-              "deadzone": 0.5,
+              "deadzone": 0.4,
               "scale": 2
             }
           ],
