@@ -29,9 +29,7 @@
   "browser-unsupported-feature": "Dein Browser unterstützt diese Funktion nicht",
   "button-xbox": "Xbox Taste",
   "bypass-region-restriction": "Regionsbeschränkungen umgehen",
-  "can-stream-xbox-360-games": "Kann Xbox 360 Spiele streamen",
   "cancel": "Abbrechen",
-  "cant-stream-xbox-360-games": "Kann Xbox 360 Spiele nicht streamen",
   "center": "Zentriert",
   "clarity-boost": "Schärfe-Booster",
   "clarity-boost-warning": "Diese Einstellungen funktionieren nicht, wenn \"Clarity Boost\" aktiviert ist",
@@ -287,5 +285,7 @@
   "volume": "Lautstärke",
   "wait-time-estimated": "Geschätzte Endzeit",
   "waiting-for-input": "Warte auf Eingabe...",
-  "wallpaper": "Hintergrundbild"
+  "wallpaper": "Hintergrundbild",
+  "xbox-360-games": "Xbox 360 Spiele",
+  "xbox-apps": "Xbox Apps"
 }

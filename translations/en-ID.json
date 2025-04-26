@@ -28,9 +28,7 @@
   "browser-unsupported-feature": "Browser anda tidak mendukung fitur ini",
   "button-xbox": "Tombol Xbox",
   "bypass-region-restriction": "Matikan batasan negara",
-  "can-stream-xbox-360-games": "Dapat melakukan stream game Xbox 360",
   "cancel": "Batal",
-  "cant-stream-xbox-360-games": "Tidak dapat melakukan stream game Xbox 360",
   "center": "Tengah",
   "chat": "Obrolan",
   "clarity-boost": "Peningkatan kejelasan",
@@ -283,5 +281,6 @@
   "visual-quality-low": "Rendah",
   "wait-time-countdown": "Hitung mundur",
   "wait-time-estimated": "Perkiraan waktu Selesai ",
-  "waiting-for-input": "Menunggu sambungan..."
+  "waiting-for-input": "Menunggu sambungan...",
+  "xbox-apps": "Aplikasi Xbox"
 }

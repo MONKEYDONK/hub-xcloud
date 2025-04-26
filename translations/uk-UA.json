@@ -30,9 +30,7 @@
   "browser-unsupported-feature": "Ваш браузер не підтримує цю функцію",
   "button-xbox": "Кнопка Xbox",
   "bypass-region-restriction": "Обійти обмеження регіону",
-  "can-stream-xbox-360-games": "Може транслювати ігри Xbox 360",
   "cancel": "Скасувати",
-  "cant-stream-xbox-360-games": "Не може транслювати ігри Xbox 360",
   "center": "По центру",
   "chat": "Чат",
   "clarity-boost": "Підвищення чіткості",
@@ -307,5 +305,7 @@
   "wait-time-countdown": "Зворотній відлік",
   "wait-time-estimated": "Орієнтовний час завершення",
   "waiting-for-input": "Очікування введення...",
-  "wallpaper": "Шпалери"
+  "wallpaper": "Шпалери",
+  "xbox-360-games": "Ігри Xbox 360",
+  "xbox-apps": "Застосунки Xbox"
 }

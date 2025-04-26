@@ -30,9 +30,7 @@
   "browser-unsupported-feature": "您的瀏覽器不支援此功能",
   "button-xbox": "Xbox按鈕",
   "bypass-region-restriction": "繞過雲端遊戲區域限制",
-  "can-stream-xbox-360-games": "可以搖控遊玩Xbox 360遊戲",
   "cancel": "取消",
-  "cant-stream-xbox-360-games": "不能搖控遊玩Xbox 360遊戲",
   "center": "中央",
   "chat": "聊天",
   "clarity-boost": "清晰度強化",
@@ -308,5 +306,6 @@
   "wait-time-countdown": "倒數",
   "wait-time-estimated": "預計等待時間",
   "waiting-for-input": "等待輸入…",
-  "wallpaper": "桌布"
+  "wallpaper": "桌布",
+  "xbox-360-games": "Xbox 360遊戲"
 }

@@ -30,9 +30,7 @@
   "browser-unsupported-feature": "이 브라우저에서 이 기능을 지원하지 않습니다.",
   "button-xbox": "Xbox 가이드 버튼",
   "bypass-region-restriction": "지역제한 우회",
-  "can-stream-xbox-360-games": "Xbox 360 게임 스트림 가능",
   "cancel": "취소",
-  "cant-stream-xbox-360-games": "Xbox 360 게임 스트림 불가",
   "center": "중앙",
   "chat": "채팅",
   "clarity-boost": "명확성 향상",
@@ -308,5 +306,7 @@
   "wait-time-countdown": "카운트다운",
   "wait-time-estimated": "예상 완료 시간",
   "waiting-for-input": "입력 대기 중...",
-  "wallpaper": "배경화면"
+  "wallpaper": "배경화면",
+  "xbox-360-games": "Xbox 360 게임",
+  "xbox-apps": "Xbox 앱"
 }

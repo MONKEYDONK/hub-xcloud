@@ -30,9 +30,7 @@
   "browser-unsupported-feature": "Trình duyệt không hỗ trợ tính năng này",
   "button-xbox": "Nút Xbox",
   "bypass-region-restriction": "Gỡ bỏ giới hạn khu vực",
-  "can-stream-xbox-360-games": "Có thể stream các game Xbox 360",
   "cancel": "Hủy",
-  "cant-stream-xbox-360-games": "Không thể stream các game Xbox 360",
   "center": "Chính giữa",
   "clarity-boost": "Tăng độ rõ ràng",
   "clarity-boost-warning": "Các tùy chỉnh này không hoạt động khi chế độ Clarity Boost đang được bật",
@@ -301,5 +299,7 @@
   "wait-time-countdown": "Đếm ngược",
   "wait-time-estimated": "Thời gian hoàn thành dự kiến",
   "waiting-for-input": "Đang chờ phím...",
-  "wallpaper": "Hình nền"
+  "wallpaper": "Hình nền",
+  "xbox-360-games": "Game Xbox 360",
+  "xbox-apps": "Các ứng dụng Xbox"
 }

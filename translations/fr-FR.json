@@ -28,9 +28,7 @@
   "browser-unsupported-feature": "Votre navigateur ne supporte pas cette fonctionnalité",
   "button-xbox": "Bouton Xbox",
   "bypass-region-restriction": "Contourner la restriction de région",
-  "can-stream-xbox-360-games": "Vous pouvez jouer à des jeux Xbox 360",
   "cancel": "Annuler",
-  "cant-stream-xbox-360-games": "Impossible de jouer à des jeux Xbox 360",
   "center": "Centre",
   "chat": "Salon de Discussion",
   "clarity-boost": "Amélioration de la clarté",
@@ -288,5 +286,7 @@
   "wait-time-countdown": "Compte à rebours",
   "wait-time-estimated": "Temps estimé avant la fin",
   "waiting-for-input": "En attente de l'entrée...",
-  "wallpaper": "Fond d'écran"
+  "wallpaper": "Fond d'écran",
+  "xbox-360-games": "Jeux Xbox 360",
+  "xbox-apps": "Applications Xbox"
 }

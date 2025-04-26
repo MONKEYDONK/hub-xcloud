@@ -30,9 +30,7 @@
   "browser-unsupported-feature": "Twoja przeglądarka nie obsługuje tej funkcji",
   "button-xbox": "Przycisk Xbox",
   "bypass-region-restriction": "Omiń ograniczenia regionalne",
-  "can-stream-xbox-360-games": "Można strumieniować gry Xbox 360",
   "cancel": "Anuluj",
-  "cant-stream-xbox-360-games": "Nie można strumieniować gier Xbox 360",
   "center": "Środek",
   "chat": "Czat",
   "clarity-boost": "Większa wyrazistość",
@@ -298,5 +296,7 @@
   "wait-time-countdown": "Pozostały czas oczekiwania",
   "wait-time-estimated": "Szacowany czas zakończenia",
   "waiting-for-input": "Naciśnij przycisk...",
-  "wallpaper": "Tapeta"
+  "wallpaper": "Tapeta",
+  "xbox-360-games": "Gry Xbox 360",
+  "xbox-apps": "Aplikacje Xbox"
 }

@@ -29,9 +29,7 @@
   "browser-unsupported-feature": "お使いのブラウザはこの機能をサポートしていません。",
   "button-xbox": "Xbox ボタン",
   "bypass-region-restriction": "リージョン制限の回避",
-  "can-stream-xbox-360-games": "Xbox 360ゲームのストリーミング可能",
   "cancel": "キャンセル",
-  "cant-stream-xbox-360-games": "Xbox 360ゲームのストリーミング不可",
   "center": "中央",
   "chat": "チャット",
   "clarity-boost": "クラリティブースト",
@@ -302,5 +300,6 @@
   "wait-time-countdown": "カウントダウン",
   "wait-time-estimated": "推定完了時間",
   "waiting-for-input": "入力待ち...",
-  "wallpaper": "壁紙"
+  "wallpaper": "壁紙",
+  "xbox-apps": "Xboxアプリ"
 }
