@@ -41,7 +41,10 @@
             null,
             [
               {
-                "type": "directionalPad"
+                "type": "directionalPad",
+                "interaction": {
+                  "activationType": "exclusive"
+                }
               }
             ],
             null,
@@ -70,35 +73,94 @@
               "type": "button",
               "action": "rightTrigger"
             },
+            {
+              "type": "button",
+              "action": "gamepadB",
+              "pullAction": {
+                "type": "segmented",
+                "items": [
+                  "gamepadX"
+                ]
+              },
+              "styles": {
+                "default": {
+                  "pullIndicator": [
+                    {
+                      "opacity": 0.5
+                    },
+                    {
+                      "faceImage": {
+                        "type": "icon",
+                        "value": "lightPunch3"
+                      }
+                    }
+                  ]
+                },
+                "idle": {
+                  "pullIndicator": [
+                    {
+                      "opacity": 0.0
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "button",
+              "action": "gamepadX",
+              "styles": {
+                "default": {
+                  "faceImage": {
+                    "type": "icon",
+                    "value": "lightPunch3"
+                  }
+                }
+              }
+            },
             [
               {
                 "type": "button",
-                "action": "gamepadB"
-              },
-              null,
-              {
-                "type": "button",
                 "action": "gamepadA",
+                "pullAction": {
+                  "type": "segmented",
+                  "items": [
+                    "gamepadX",
+                    "gamepadB"
+                  ]
+                },
                 "styles": {
                   "default": {
                     "faceImage": {
                       "type": "icon",
                       "value": "jump"
-                    }
-                  }
-                }
-              }
-            ],
-            [
-              {
-                "type": "button",
-                "action": "gamepadX",
-                "styles": {
-                  "default": {
-                    "faceImage": {
-                      "type": "icon",
-                      "value": "lightPunch3"
-                    }
+                    },
+                    "pullIndicator": [
+                      {
+                        "opacity": 0.5
+                      },
+                      {
+                        "opacity": 0.5
+                      },
+                      {
+                        "faceImage": {
+                          "type": "icon",
+                          "value": "lightPunch3"
+                        }
+                      },
+                      {
+                        "faceImage": {
+                          "type": "icon",
+                          "value": "gamepadB"
+                        }
+                      }
+                    ]
+                  },
+                  "idle": {
+                    "pullIndicator": [
+                      {
+                        "opacity": 0.0
+                      }
+                    ]
                   }
                 }
               },
@@ -121,7 +183,48 @@
             ],
             {
               "type": "button",
-              "action": "leftTrigger"
+              "action": "leftTrigger",
+              "pullAction": {
+                "type": "segmented",
+                "items": [
+                  "gamepadX",
+                  "rightTrigger"
+                ]
+              },
+              "styles": {
+                "default": {
+                  "pullIndicator": [
+                    {
+                      "opacity": 0.5
+                    },
+                    {
+                      "opacity": 0.5
+                    },
+                    {
+                      "faceImage": {
+                        "type": "icon",
+                        "value": "lightPunch3"
+                      }
+                    },
+                    {
+                      "faceImage": {
+                        "type": "icon",
+                        "value": "rightTrigger"
+                      }
+                    }
+                  ]
+                },
+                "idle": {
+                  "pullIndicator": [
+                    {
+                      "opacity": 0.0
+                    },
+                    {
+                      "opacity": 0.0
+                    }
+                  ]
+                }
+              }
             },
             {
               "type": "button",
