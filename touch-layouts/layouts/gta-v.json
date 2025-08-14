@@ -9,6 +9,25 @@
           "inner": [
             {
               "type": "joystick",
+              "expand": false,
+              "axis": {
+                "input": "axisXY",
+                "output": "leftJoystick"
+              }
+            }
+          ],
+          "outer": [
+            null,
+            null,
+            [
+              {
+                "type": "directionalPad"
+              }
+            ],
+            null,
+            null,
+            {
+              "type": "joystick",
               "axis": {
                 "input": "axisXY",
                 "output": "leftJoystick",
@@ -17,6 +36,7 @@
                   "radial": true
                 }
               },
+              "action": "leftTrigger",
               "styles": {
                 "default": {
                   "outline": {
@@ -29,29 +49,15 @@
                       "color": "#ffffff"
                     },
                     "opacity": 0.5
+                  },
+                  "knob": {
+                    "faceImage": {
+                      "type": "icon",
+                      "value": "leftTrigger"
+                    }
                   }
                 }
               }
-            }
-          ],
-          "outer": [
-            null,
-            null,
-            {
-              "type": "button",
-              "action": "leftThumb",
-              "styles": {
-                "default": {
-                  "faceImage": {
-                    "type": "icon",
-                    "value": "crouch"
-                  }
-                }
-              }
-            },
-            {
-              "type": "button",
-              "action": "rightBumper"
             },
             {
               "type": "joystick",
@@ -85,15 +91,7 @@
                   }
                 }
               }
-            },
-            null,
-            [
-              {
-                "type": "button",
-                "action": "rightTrigger"
-              },
-              null
-            ]
+            }
           ]
         },
         "right": {
@@ -102,32 +100,7 @@
               "type": "joystick",
               "axis": {
                 "input": "axisXY",
-                "output": "rightJoystick",
-                "deadzone": {
-                  "threshold": 0,
-                  "radial": true
-                }
-              },
-              "styles": {
-                "default": {
-                  "outline": {
-                    "indicator": {
-                      "type": "color",
-                      "value": "#ffffff"
-                    },
-                    "stroke": {
-                      "type": "solid",
-                      "color": "#ffffff"
-                    },
-                    "opacity": 0.5
-                  },
-                  "knob": {
-                    "faceImage": {
-                      "type": "icon",
-                      "value": "look"
-                    }
-                  }
-                }
+                "output": "rightJoystick"
               }
             }
           ],
@@ -135,11 +108,63 @@
             [
               {
                 "type": "button",
-                "toggle": true,
-                "action": "leftTrigger"
+                "action": "rightBumper"
+              },
+              {
+                "type": "button",
+                "action": "rightThumb",
+                "styles": {
+                  "default": {
+                    "faceImage": {
+                      "type": "icon",
+                      "value": "lookBehind2"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "touchpad",
+                "axis": {
+                  "input": "axisXY",
+                  "output": "rightJoystick",
+                  "deadzone": {
+                    "threshold": 0.20
+                  }
+                },
+                "renderAsButton": true,
+                "action": [
+                  "rightTrigger"
+                ],
+                "styles": {
+                  "default": {
+                    "faceImage": {
+                      "type": "icon",
+                      "value": "rightTrigger"
+                    }
+                  }
+                }
+              }
+            ],
+            [
+              null,
+              {
+                "type": "button",
+                "action": "leftThumb"
               },
               null
             ],
+            {
+              "type": "button",
+              "action": "gamepadA",
+              "styles": {
+                "default": {
+                  "faceImage": {
+                    "type": "icon",
+                    "value": "sprint"
+                  }
+                }
+              }
+            },
             {
               "type": "button",
               "action": "gamepadB",
@@ -147,7 +172,7 @@
                 "default": {
                   "faceImage": {
                     "type": "icon",
-                    "value": "weaponSelect"
+                    "value": "lightPunch"
                   }
                 }
               }
@@ -159,49 +184,11 @@
                 "default": {
                   "faceImage": {
                     "type": "icon",
-                    "value": "reload"
+                    "value": "jump"
                   }
                 }
               }
             },
-            {
-              "type": "touchpad",
-              "axis": [
-                {
-                  "input": "axisX",
-                  "output": "rightJoystickX",
-                  "sensitivity": 3
-                },
-                {
-                  "input": "axisY",
-                  "output": "rightJoystickY",
-                  "sensitivity": 3
-                }
-              ],
-              "renderAsButton": true,
-              "action": "rightTrigger",
-              "styles": {
-                "default": {
-                  "faceImage": {
-                    "type": "icon",
-                    "value": "fire"
-                  }
-                }
-              }
-            },
-            {
-              "type": "button",
-              "action": "gamepadA",
-              "styles": {
-                "default": {
-                  "faceImage": {
-                    "type": "icon",
-                    "value": "interact"
-                  }
-                }
-              }
-            },
-            null,
             {
               "type": "button",
               "action": "gamepadY",
@@ -209,7 +196,7 @@
                 "default": {
                   "faceImage": {
                     "type": "icon",
-                    "value": "weaponSelect"
+                    "value": "enterCar"
                   }
                 }
               }
@@ -222,9 +209,18 @@
               "type": "button",
               "action": "menu"
             },
+            null,
             {
               "type": "button",
-              "action": "view"
+              "action": "view",
+              "styles": {
+                "default": {
+                  "faceImage": {
+                    "type": "icon",
+                    "value": "switchCamera"
+                  }
+                }
+              }
             }
           ]
         }
