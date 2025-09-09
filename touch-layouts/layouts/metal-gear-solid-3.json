@@ -1,10 +1,25 @@
 {
   "schema_version": 1,
   "layouts": {
-    "type-a-1": {
-      "name": "Type A-1",
+    "custom": {
+      "name": "Custom",
       "author": "Kode-Z",
       "content": {
+        "layers": {
+          "rJoystick": {
+            "right": {
+              "inner": [
+                {
+                  "type": "joystick",
+                  "axis": {
+                    "input": "axisXY",
+                    "output": "leftJoystick"
+                  }
+                }
+              ]
+            }
+          }
+        },
         "left": {
           "inner": [
             {
@@ -12,32 +27,15 @@
               "axis": {
                 "input": "axisXY",
                 "output": "leftJoystick"
-              },
-              "action": "leftThumb",
-              "relative": false,
-              "actionThreshold": 2,
-              "styles": {
-                "default": {
-                  "knob": {
-                    "faceImage": {
-                      "type": "icon",
-                      "value": "walk"
-                    }
-                  }
-                },
-                "activated": {
-                  "knob": {
-                    "faceImage": {
-                      "type": "icon",
-                      "value": "sprint"
-                    }
-                  }
-                }
               }
             }
           ],
           "outer": [
-            null,
+            {
+              "type": "button",
+              "action": "rightBumper",
+              "toggle": true
+            },
             null,
             [
               {
@@ -45,7 +43,7 @@
                 "interaction": {
                   "activationType": "exclusive"
                 },
-                "scale": 1
+                "scale": 1.3
               }
             ],
             [
@@ -55,7 +53,7 @@
                   "input": "axisXY",
                   "output": "leftJoystick",
                   "deadzone": {
-                    "threshold": 0.05,
+                    "threshold": 0,
                     "radial": true
                   }
                 },
@@ -82,31 +80,19 @@
             ],
             [
               {
-                "type": "joystick",
-                "axis": {
-                  "input": "axisXY",
-                  "output": "leftJoystick",
-                  "deadzone": {
-                    "threshold": 0.05,
-                    "radial": true
+                "type": "button",
+                "action": [
+                  "leftTrigger",
+                  {
+                    "type": "layer",
+                    "target": "rJoystick"
                   }
-                },
-                "action": "leftTrigger",
+                ],
                 "styles": {
                   "default": {
-                    "knob": {
-                      "faceImage": {
-                        "type": "icon",
-                        "value": "leftTrigger"
-                      },
-                      "background": {
-                        "type": "color",
-                        "value": "#ffffff",
-                        "opacity": 0.1
-                      },
-                      "stroke": {
-                        "opacity": 0.1
-                      }
+                    "faceImage": {
+                      "type": "icon",
+                      "value": "leftTrigger"
                     }
                   }
                 }
@@ -117,10 +103,77 @@
         "right": {
           "inner": [
             {
+              "type": "joystick",
+              "axis": {
+                "input": "axisXY",
+                "output": "rightJoystick"
+              }
+            }
+          ],
+          "outer": [
+            [
+              {
+                "type": "button",
+                "action": "rightTrigger"
+              }
+            ],
+            {
+              "type": "button",
+              "action": "gamepadA",
+              "styles": {
+                "default": {
+                  "faceImage": {
+                    "type": "icon",
+                    "value": "crouch"
+                  }
+                }
+              }
+            },
+            null,
+            [
+              null,
+              {
+                "type": "touchpad",
+                "axis": {
+                  "input": "axisXY",
+                  "output": "rightJoystick",
+                  "sensitivity": 5,
+                  "deadzone": {
+                    "threshold": 0,
+                    "radial": true
+                  }
+                },
+                "renderAsButton": true,
+                "action": [
+                  "gamepadB"
+                ],
+                "styles": {
+                  "default": {
+                    "faceImage": {
+                      "type": "icon",
+                      "value": "lightPunch3"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "button",
+                "action": "gamepadY",
+                "styles": {
+                  "default": {
+                    "faceImage": {
+                      "type": "icon",
+                      "value": "interact"
+                    }
+                  }
+                }
+              }
+            ],
+            {
               "type": "touchpad",
               "axis": {
                 "input": "axisXY",
-                "output": "rightJoystick",
+                "output": "leftJoystick",
                 "sensitivity": 5,
                 "deadzone": {
                   "threshold": 0,
@@ -129,7 +182,7 @@
               },
               "renderAsButton": true,
               "action": [
-                "rightTrigger"
+                "gamepadX"
               ],
               "styles": {
                 "default": {
@@ -139,72 +192,31 @@
                   }
                 }
               }
+            },
+            {
+              "type": "button",
+              "action": "leftThumb"
             }
-          ],
-          "outer": [
-            [
-              {
-                "type": "button",
-                "action": "rightBumper"
-              },
-              {
-                "type": "button",
-                "action": "rightThumb"
-              },
-              {
-                "type": "button",
-                "action": "gamepadB",
-                "styles": {
-                  "default": {
-                    "faceImage": {
-                      "type": "icon",
-                      "value": "crouch"
-                    }
-                  }
-                }
-              }
-            ],
-            {
-              "type": "button",
-              "action": "gamepadX",
-              "styles": {
-                "default": {
-                  "faceImage": {
-                    "type": "icon",
-                    "value": "reload"
-                  }
-                }
-              }
-            },
-            {
-              "type": "button",
-              "action": "gamepadA",
-              "styles": {
-                "default": {
-                  "faceImage": {
-                    "type": "icon",
-                    "value": "interact"
-                  }
-                }
-              }
-            },
-            [
-              {
-                "type": "joystick",
-                "axis": {
-                  "input": "axisXY",
-                  "output": "rightJoystick"
-                }
-              }
-            ]
           ]
         },
         "upper": {
           "right": [
             {
               "type": "button",
-              "action": "menu"
-            },
+              "action": "rightThumb",
+              "styles": {
+                "default": {
+                  "faceImage": {
+                    "type": "icon",
+                    "value": "switchCamera"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "lower": {
+          "leftCenter": [
             {
               "type": "button",
               "action": "view",
@@ -212,22 +224,16 @@
                 "default": {
                   "faceImage": {
                     "type": "icon",
-                    "value": "map"
+                    "value": "radio"
                   }
                 }
               }
-            },
+            }
+          ],
+          "rightCenter": [
             {
               "type": "button",
-              "action": "gamepadY",
-              "styles": {
-                "default": {
-                  "faceImage": {
-                    "type": "icon",
-                    "value": "inventory"
-                  }
-                }
-              }
+              "action": "menu"
             }
           ]
         }
