@@ -188,6 +188,7 @@
   "press-any-button": "按下任意键",
   "press-esc-to-cancel": "按下ESC键以取消",
   "press-to-bind": "按相应按键或鼠标键来绑定",
+  "prevent-resolution-drops": "阻止分辨率下降",
   "prompt-preset-name": "预设名称：",
   "quality": "质量",
   "recommended": "推荐",
@@ -199,6 +200,7 @@
   "renderer": "渲染器",
   "renderer-configuration": "渲染模式设置",
   "reset-highlighted-setting": "重置高亮设置",
+  "resolution": "分辨率",
   "right-click-to-unbind": "右键解除绑定",
   "right-stick": "右摇杆",
   "right-stick-deadzone": "右摇杆死区",
@@ -273,6 +275,7 @@
   "tc-custom-layout-style": "特殊游戏按钮样式",
   "tc-muted-colors": "低饱和度",
   "tc-standard-layout-style": "通用按钮样式",
+  "test-controller": "手柄测试",
   "text-size": "文字大小",
   "theme": "主题",
   "toggle": "切换",
@@ -310,5 +313,7 @@
   "wait-time-countdown": "倒计时",
   "wait-time-estimated": "预计等待时间",
   "waiting-for-input": "等待输入中...",
-  "wallpaper": "设为壁纸"
+  "wallpaper": "设为壁纸",
+  "xbox-360-games": "Xbox 360 游戏",
+  "xbox-apps": "Xbox 应用"
 }
