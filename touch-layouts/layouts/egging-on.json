@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "layouts": {
+    "custom": {
+      "name": "Custom",
+      "author": "Kode-Z",
+      "content": {
+        "left": {
+          "inner": [
+            {
+              "type": "joystick",
+              "expand": false,
+              "axis": {
+                "input": "axisXY",
+                "output": "leftJoystick",
+                "deadzone": {
+                  "threshold": 0,
+                  "radial": true
+                }
+              },
+              "styles": {
+                "default": {
+                  "outline": {
+                    "indicator": {
+                      "type": "color",
+                      "value": "#ffffff"
+                    },
+                    "stroke": {
+                      "type": "solid",
+                      "color": "#ffffff"
+                    },
+                    "opacity": 0.5
+                  },
+                  "knob": {
+                    "faceImage": {
+                      "type": "icon",
+                      "value": "move"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "right": {
+          "inner": [
+            {
+              "type": "button",
+              "action": "rightTrigger",
+              "styles": {
+                "default": {
+                  "faceImage": {
+                    "type": "icon",
+                    "value": "jump"
+                  }
+                }
+              }
+            }
+          ],
+          "outer": [
+            {
+              "type": "button",
+              "action": "leftTrigger",
+              "styles": {
+                "default": {
+                  "faceImage": {
+                    "type": "icon",
+                    "value": "zoomIn"
+                  }
+                }
+              }
+            },
+            {
+              "type": "button",
+              "action": "gamepadY"
+            },
+            {
+              "type": "button",
+              "action": "gamepadX"
+            },
+            {
+              "type": "button",
+              "action": "gamepadA"
+            },
+            [
+              {
+                "type": "joystick",
+                "axis": {
+                  "input": "axisXY",
+                  "output": "rightJoystick",
+                  "deadzone": {
+                    "threshold": 0,
+                    "radial": true
+                  }
+                },
+                "styles": {
+                  "default": {
+                    "outline": {
+                      "indicator": {
+                        "type": "color",
+                        "value": "#ffffff"
+                      },
+                      "stroke": {
+                        "type": "solid",
+                        "color": "#ffffff"
+                      },
+                      "opacity": 0.5
+                    },
+                    "knob": {
+                      "faceImage": {
+                        "type": "icon",
+                        "value": "look"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            null,
+            {
+              "type": "button",
+              "action": "leftBumper",
+              "styles": {
+                "default": {
+                  "faceImage": {
+                    "type": "icon",
+                    "value": "zoomOut"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "upper": {
+          "right": [
+            {
+              "type": "button",
+              "action": "menu"
+            },
+            {
+              "type": "button",
+              "action": "gamepadB"
+            },
+            {
+              "type": "button",
+              "action": "rightBumper"
+            },
+            {
+              "type": "button",
+              "action": "leftBumper"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
