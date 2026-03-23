@@ -633,13 +633,25 @@ true` + text;
         return str;
     },
 
-    exposeInputChannel(str: string) {
+    exposeInputChannelV1(str: string) {
         let text = '()(this,"flushData",(';
         if (!str.includes(text)) {
             return false;
         }
 
+        // ChannelProtocolV1
         str = str.replace(text, '()(window.BX_EXPOSED.inputChannel = this, "flushData", (');
+        return str;
+    },
+
+    exposeInputChannelV2(str: string) {
+        let text = '()(this,"reliableChannel",void';
+        if (!str.includes(text)) {
+            return false;
+        }
+
+        // ChannelProtocolV2
+        str = str.replace(text, '()(window.BX_EXPOSED.inputChannel = this, "reliableChannel",void');
         return str;
     },
 
@@ -1420,7 +1432,8 @@ let HOME_PAGE_PATCH_ORDERS = PatcherUtils.filterPatches([
 
 // Only when playing
 let STREAM_PAGE_PATCH_ORDERS = PatcherUtils.filterPatches([
-    'exposeInputChannel',
+    'exposeInputChannelV1',
+    'exposeInputChannelV2',
 
     'patchXcloudTitleInfo',
     'disableGamepadDisconnectedScreen',

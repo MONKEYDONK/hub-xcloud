@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Better xCloud
 // @namespace    https://github.com/redphx
-// @version      6.7.7
+// @version      6.7.8-beta
 // @description  Improve Xbox Cloud Gaming (xCloud) experience
 // @author       redphx
 // @license      MIT
@@ -195,7 +195,7 @@ class UserAgent {
   });
  }
 }
-var SCRIPT_VERSION = "6.7.7", SCRIPT_VARIANT = "full", AppInterface = window.AppInterface;
+var SCRIPT_VERSION = "6.7.8-beta", SCRIPT_VARIANT = "full", AppInterface = window.AppInterface;
 UserAgent.init();
 var userAgent = window.navigator.userAgent.toLowerCase(), isTv = userAgent.includes("smart-tv") || userAgent.includes("smarttv") || /\baft.*\b/.test(userAgent), isVr = window.navigator.userAgent.includes("VR") && window.navigator.userAgent.includes("OculusBrowser"), browserHasTouchSupport = "ontouchstart" in window || navigator.maxTouchPoints > 0, userAgentHasTouchSupport = !isTv && !isVr && browserHasTouchSupport, STATES = {
  supportedRegion: !0,
@@ -5497,10 +5497,15 @@ true` + text;
   if (!str.includes(text)) return !1;
   return str = str.replace(text, text + "return true;"), str;
  },
- exposeInputChannel(str) {
+ exposeInputChannelV1(str) {
   let text = '()(this,"flushData",(';
   if (!str.includes(text)) return !1;
   return str = str.replace(text, '()(window.BX_EXPOSED.inputChannel = this, "flushData", ('), str;
+ },
+ exposeInputChannelV2(str) {
+  let text = '()(this,"reliableChannel",void';
+  if (!str.includes(text)) return !1;
+  return str = str.replace(text, '()(window.BX_EXPOSED.inputChannel = this, "reliableChannel",void'), str;
  },
  disableNativeRequestPointerLock(str) {
   let text = "async requestPointerLock(){";
@@ -5835,7 +5840,8 @@ try {
   "changeNotificationsSubscription"
  ] : []
 ]), STREAM_PAGE_PATCH_ORDERS = PatcherUtils.filterPatches([
- "exposeInputChannel",
+ "exposeInputChannelV1",
+ "exposeInputChannelV2",
  "patchXcloudTitleInfo",
  "disableGamepadDisconnectedScreen",
  "patchStreamHud",
